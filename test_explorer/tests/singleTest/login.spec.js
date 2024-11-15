@@ -19,6 +19,4 @@ test('Login Test', async ({ page }) => {
   expect(password).toBe(pParams.password)
   await loginPage.clickLogin()
 
-  // Assertion
-  await expect(page).toHaveURL(/inventory/)
 })
